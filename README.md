@@ -1,3 +1,7 @@
+# Real-Time E-Commerce Data Engineering Pipeline
+
+![Architecture](screenshots/architecture_diagram.png)
+
 # Real-Time Ecommerce Data Engineering Pipeline
 
 ## Overview
