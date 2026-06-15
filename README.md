@@ -2,6 +2,17 @@
 
 ![Architecture](screenshots/architecture_diagram.png)
 
+## Project Highlights
+
+- Real-time event ingestion using Kafka
+- Bronze, Silver, Gold Medallion Architecture
+- Databricks ETL processing with PySpark
+- Airflow orchestration and monitoring
+- Data quality validation checks
+- Railway MySQL data warehouse loading
+- Dockerized local infrastructure
+-----
+
 ## Overview
 
 This project demonstrates an end-to-end real-time data engineering pipeline built using Apache Kafka, Databricks, Airflow, Docker, and Railway MySQL.
