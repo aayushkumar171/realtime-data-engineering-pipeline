@@ -2,6 +2,12 @@
 
 ![Architecture](screenshots/architecture_diagram.png)
 
+## Overview
+
+This project demonstrates an end-to-end real-time data engineering pipeline built using Apache Kafka, Databricks, Airflow, Docker, and Railway MySQL.
+
+The pipeline ingests e-commerce events through a Flask API, streams data using Kafka, processes data in Databricks using the Medallion Architecture (Bronze, Silver, Gold), and orchestrates validation and loading into MySQL using Apache Airflow.
+
 # Real-Time Ecommerce Data Engineering Pipeline
 
 ## Overview
@@ -11,39 +17,18 @@ This project demonstrates a complete end-to-end Data Engineering pipeline built 
 The pipeline simulates ecommerce transactions, processes them using Databricks and PySpark, orchestrates workflow execution with Apache Airflow, and loads curated data into a MySQL data warehouse hosted on Railway.
 
 ---
-
 ## Tech Stack
 
-### Data Generation
-
-* Python
-* Faker
-
-### Messaging Layer
-
-* Apache Kafka
-* Zookeeper
-
-### Data Processing
-
-* Databricks Community Edition
-* PySpark
-
-### Workflow Orchestration
-
-* Apache Airflow
-
-### Storage
-
-* MySQL
-* Railway MySQL
-
-### Containerization
-
-* Docker
-* Docker Compose
-
----
+- Python
+- Flask API
+- Apache Kafka
+- Docker
+- Databricks
+- PySpark
+- Delta Lake
+- Apache Airflow
+- MySQL
+- Railway
 
 ## Architecture
 
@@ -72,8 +57,21 @@ Ecommerce Data Generator
             ▼
       Railway MySQL
 ```
+## Project Structure
 
----
+```text
+Airflow/
+Consumer/
+Databricks/
+Flask_api/
+My_Sql/
+screenshots/
+
+Load_to_railway.py
+docker-compose.yml
+requirements.txt
+README.md
+```
 
 ## Workflow
 
@@ -167,6 +165,19 @@ pipeline_success
 ```
 
 ---
+## Project Screenshots
+
+### Airflow DAG Success
+
+![Airflow](screenshots/airflow_success.png)
+
+### Docker Containers
+
+![Docker](screenshots/docker_containers.png)
+
+### Generated Exports
+
+![Exports](screenshots/exports_generated.png)
 
 ## Data Quality Checks
 
