@@ -1,0 +1,6 @@
+python-dotenv
+mysql-connector-python
+pandas
+mysql-connector-python
+python-dotenv
+apache-airflow==2.10.0
